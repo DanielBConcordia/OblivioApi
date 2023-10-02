@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.get('/', (req, res) => res.send('API Oblivio'))
-app.use(cuidador);
+app.use('/cuidador',cuidador);
 app.use(paciente);
 app.use(remedio);
 app.use(alergia);
