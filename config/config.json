@@ -1,0 +1,42 @@
+{
+  "development": {
+    "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": true
+      }
+    },
+    "username": "DanielBConcordia",
+    "password": "V8GHho5DtNJv",
+    "host": "ep-young-math-99091305.us-east-2.aws.neon.tech",
+    "database": "oblivio"
+  },
+  "test": {
+        "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": true
+      }
+    },
+    "username": "DanielBConcordia",
+    "password": "V8GHho5DtNJv",
+    "host": "ep-young-math-99091305.us-east-2.aws.neon.tech",
+    "database": "oblivio"
+    
+  },
+  "production": {
+       "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": true
+      }
+    },
+    "username": "DanielBConcordia",
+    "password": "V8GHho5DtNJv",
+    "host": "ep-young-math-99091305.us-east-2.aws.neon.tech",
+    "database": "oblivio"
+  }
+}
