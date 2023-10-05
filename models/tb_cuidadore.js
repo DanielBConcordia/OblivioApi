@@ -35,6 +35,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     sequelize,
     modelName: 'tb_cuidadore',
+    timestamps: false
   });
   return tb_cuidadore;
 };
