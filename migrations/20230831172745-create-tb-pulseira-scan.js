@@ -21,13 +21,8 @@ module.exports = {
         references: { model: 'tb_pacientes', key: 'id'},
         onDelete: 'CASCADE'
       },
-      createdAt: {
-        allowNull: false,
-        type: Sequelize.DATE
-      },
-      updatedAt: {
-        allowNull: false,
-        type: Sequelize.DATE
+      tb_pulseira_scan_local: {
+        type: Sequelize.STRING
       }
     });
   },

@@ -14,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   tb_cuidadore.init({
-    tb_cuidador_cpf: DataTypes.INTEGER,
+    tb_cuidador_cpf: DataTypes.CHAR(11),
     tb_cuidador_dt_nasc: DataTypes.DATE,
     tb_cuidador_email: DataTypes.STRING,
     tb_cuidador_tel: DataTypes.INTEGER,
@@ -24,7 +24,7 @@ module.exports = (sequelize, DataTypes) => {
     tb_cuidador_senha: DataTypes.STRING,
     tb_cuidador_foto_p: DataTypes.BLOB,
     tb_cuidador_rua: DataTypes.STRING,
-    tb_cuidador_cep: DataTypes.INTEGER,
+    tb_cuidador_cep: DataTypes.CHAR(8),
     tb_cuidador_bairro: DataTypes.STRING,
     tb_cuidador_numero: DataTypes.INTEGER,
     tb_cuidador_cid: DataTypes.STRING,

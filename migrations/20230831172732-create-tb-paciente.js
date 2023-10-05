@@ -10,7 +10,7 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       tb_paciente_cpf: {
-        type: Sequelize.INTEGER
+        type: Sequelize.CHAR(11)
       },
       tb_paciente_nome: {
         type: Sequelize.STRING
@@ -25,7 +25,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       tb_paciente_tipo_sang: {
-        type: Sequelize.STRING
+        type: Sequelize.CHAR(3)
       },
       tb_paciente_temperamento: {
         type: Sequelize.STRING
@@ -44,23 +44,15 @@ module.exports = {
       },
       tb_paciente_fk_remedio: {
         type: Sequelize.INTEGER,
-        allowNull: false,
+        allowNull: true,
         references: { model: 'tb_remedios', key: 'id'},
         onDelete: 'CASCADE'
       },
       tb_paciente_fk_alergia: {
         type: Sequelize.INTEGER,
-        allowNull: false,
+        allowNull: true,
         references: { model: 'tb_alergia', key: 'id'},
         onDelete: 'CASCADE'
-      },
-      createdAt: {
-        allowNull: false,
-        type: Sequelize.DATE
-      },
-      updatedAt: {
-        allowNull: false,
-        type: Sequelize.DATE
       }
     });
   },

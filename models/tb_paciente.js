@@ -14,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   tb_paciente.init({
-    tb_paciente_cpf: DataTypes.INTEGER,
+    tb_paciente_cpf: DataTypes.CHAR(11),
     tb_paciente_nome: DataTypes.STRING,
     tb_paciente_dt_nasc: DataTypes.DATE,
     tb_paciente_condicao: DataTypes.STRING,
