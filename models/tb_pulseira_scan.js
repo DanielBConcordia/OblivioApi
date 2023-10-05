@@ -15,7 +15,8 @@ module.exports = (sequelize, DataTypes) => {
   }
   tb_pulseira_scan.init({
     tb_pulseira_scan_fk_cuidador: DataTypes.INTEGER,
-    tb_pulseira_scan_fk_paciente: DataTypes.INTEGER
+    tb_pulseira_scan_fk_paciente: DataTypes.INTEGER,
+    tb_pulseira_scan_local: DataTypes.STRING,
   }, {
     sequelize,
     modelName: 'tb_pulseira_scan',

@@ -10,7 +10,7 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       tb_cuidador_cpf: {
-        type: Sequelize.INTEGER
+        type: Sequelize.CHAR(11)
       },
       tb_cuidador_dt_nasc: {
         type: Sequelize.DATE
@@ -40,7 +40,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       tb_cuidador_cep: {
-        type: Sequelize.INTEGER
+        type: Sequelize.CHAR(8)
       },
       tb_cuidador_bairro: {
         type: Sequelize.STRING
@@ -62,17 +62,9 @@ module.exports = {
       },
       tb_cuidador_fk_nivel: {
         type: Sequelize.INTEGER,
-        allowNull: false,
+        allowNull: true,
         references: { model: 'tb_niveis', key: 'id'},
         onDelete: 'CASCADE'
-      },
-      createdAt: {
-        allowNull: false,
-        type: Sequelize.DATE
-      },
-      updatedAt: {
-        allowNull: false,
-        type: Sequelize.DATE
       }
     });
   },
