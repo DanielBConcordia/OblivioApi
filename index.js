@@ -12,7 +12,7 @@ const alergia = require("./controllers/alergiaController.js");
 //const pulseiraScan = require('./controllers/pulseiraScanController.js');
 
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors({ origin: '*'}));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.get("/", (req, res) => res.send("API Oblivio"));
 app.use("/cuidador", cuidador);
